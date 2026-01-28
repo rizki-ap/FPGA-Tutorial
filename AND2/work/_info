@@ -1,0 +1,187 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Modelsim/AND2
+vand2
+Z1 !s110 1764647131
+!i10b 1
+!s100 K<i^MPMi41SC5;kSTz2d;0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ic@N8h3]LRE26[B>kZ4ZEb0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1764646239
+Z5 8and2.v
+Z6 Fand2.v
+!i122 32
+L0 1 7
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1764647131.000000
+!s107 and2.v|
+Z9 !s90 -reportprogress|300|and2.v|
+!i113 1
+Z10 tCvgOpt 0
+vand2_tb
+!s110 1763727141
+!i10b 1
+!s100 _f`B<MS74:mCU9LRo1gPc1
+R2
+I4;<Ma975iGn>_4GicF5Un3
+R3
+R0
+w1763727135
+R5
+R6
+!i122 13
+L0 10 22
+R7
+r1
+!s85 0
+31
+!s108 1763727141.000000
+!s107 and2_tb.v|and2.v|
+!s90 -reportprogress|300|and2.v|and2_tb.v|
+!i113 1
+R10
+vbasic2_tb
+R1
+!i10b 1
+!s100 GcSUBfKh8T05iH^7@k]mm2
+R2
+I@<2i^S@T8WVc`le3?I`M_0
+R3
+R0
+R4
+R5
+R6
+!i122 32
+L0 49 21
+R7
+r1
+!s85 0
+31
+R8
+Z11 !s107 and2.v|
+R9
+!i113 1
+R10
+vnand2
+R1
+!i10b 1
+!s100 M;2@@^<l=CS^;7UQiLzQR1
+R2
+IQ0ZbkOFZmCh^Wnn@o;P]30
+R3
+R0
+R4
+R5
+R6
+!i122 32
+L0 17 7
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vnor2
+R1
+!i10b 1
+!s100 <B`I[kAMeG]E09lWE=>g[3
+R2
+ID00<P;akN^OImIg]4HN?92
+R3
+R0
+R4
+R5
+R6
+!i122 32
+L0 25 7
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vnot1
+R1
+!i10b 1
+!s100 @AFPQKDbJ?T;X5JX]ZS1h2
+R2
+Ih@nKz;SAfiGY60GgU`?bQ2
+R3
+R0
+R4
+R5
+R6
+!i122 32
+L0 33 6
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vor2
+R1
+!i10b 1
+!s100 Z2:_UW7E8jE4cM[oZl9RL1
+R2
+INR1GL36;bRAoC1L;5^CdT3
+R3
+R0
+R4
+R5
+R6
+!i122 32
+L0 9 7
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vxor2
+R1
+!i10b 1
+!s100 ]aNldzSiYZ9U]9O9CGoVg2
+R2
+IWPPFX9J8iPGmh;3?azW6^0
+R3
+R0
+R4
+R5
+R6
+!i122 32
+L0 40 7
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
