@@ -1,1 +1,7 @@
-coba
+File-file tutorial desain SoC menggunakan Nios-II
+
+1. Hello-World
+2. Custom IP
+  a. Led interface (10-led)
+  b. Simple UART
+  c. simple VGA
