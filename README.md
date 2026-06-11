@@ -6,3 +6,5 @@ Final Project of Telkom University Students
 - 
 
 VGA tutorial in VGA folder
+
+BlueTooth Low Energy OpenCore : https://github.com/JiaoXianjun/BTLE/
