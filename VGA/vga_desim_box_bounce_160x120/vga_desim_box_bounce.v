@@ -4,12 +4,12 @@
 `timescale 1ns / 1ns
 `default_nettype none
 
-module vga_desim_box_bounch (clk,rst_n,VGA_X,VGA_Y,VGA_RGB,VGA_PLOT);
+module vga_desim_box_bounce (clk,rst_n,VGA_X,VGA_Y,VGA_RGB,VGA_PLOT);
     // Number of columns and rows in the video memory
     parameter COLS = 160  ;
     parameter ROWS = 120  ;
-    parameter nX = 8; // VGA x bitwidth for 640x480
-    parameter nY = 7; // VGA y bitwidth for 640x480
+    parameter nX = 8; // VGA x bitwidth for 160x120
+    parameter nY = 7; // VGA y bitwidth for 160x120
 
     input wire clk;	// DE-series board 50 MHz Clock
     input wire rst_n;		// 
