@@ -41,15 +41,15 @@ module vga_desim_160x120 (clk,rst_n,VGA_X,VGA_Y,VGA_RGB,VGA_PLOT);
     end
 	
 	always @(posedge clk or negedge rst_n) begin
-		if (rst_n == 0) 
-			VGA_RGB <= {24{1'b0}};
+		if (rst_n == 0) 				// when reset
+			VGA_RGB <= {24{1'b0}};		// the default color is 0 (black)
 		else begin
-			if 	(VGA_X < (COLS>>2)) 		// 10'b00_1010_0000
-				VGA_RGB <= 24'hFF0000;	//RED
-			else if	(VGA_X < (COLS>>1))		// 10'b01_0100_0000
-				VGA_RGB <= 24'h00FF00;	//GREEN
-			else if	(VGA_X < (COLS>>1)+(COLS>>2)) 	// 10'b01_1110_0000	
-				VGA_RGB <= 24'h0000FF;	//BLUE
+			if 	(VGA_X < (COLS>>2)) 	// if x still below 1/4 of max, 
+				VGA_RGB <= 24'hFF0000;	// turn it to RED : 0xFF0000
+			else if	(VGA_X < (COLS>>1))	// if x between 1/4 and 1/2 of max, 
+				VGA_RGB <= 24'h00FF00;	// turn it to GREEN : 0x00FF00
+			else if	(VGA_X < (COLS>>1)+(COLS>>2)) 	// if x between 1/2 and 3/4 of max, 
+				VGA_RGB <= 24'h0000FF;				// turn it to BLUE : 0x0000ff
 			else 						
 				VGA_RGB <= 24'hFFFFFF;	//white
 		end
