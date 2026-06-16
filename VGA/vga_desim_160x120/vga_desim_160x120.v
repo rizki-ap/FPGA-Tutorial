@@ -18,7 +18,7 @@ module vga_desim_160x120 (clk,rst_n,VGA_X,VGA_Y,VGA_RGB,VGA_PLOT);
     output reg [nX-1:0] VGA_X;     	// VGA column
     output reg [nY-1:0] VGA_Y;     	// VGA row
     output reg [23:0] VGA_RGB;   	// VGA pixel colour (24-bit color)
-    output wire VGA_PLOT;   		// VGA pixel colour (24-bit color)
+    output wire VGA_PLOT;   		// VGA plot enable
 
 	assign VGA_PLOT = 1;
 
