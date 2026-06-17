@@ -20,20 +20,24 @@ module vga_desim_arom_160x120 (clk,rst_n,VGA_X,VGA_Y,VGA_RGB,VGA_PLOT);
     output wire VGA_PLOT;   	// VGA pixel colour (24-bit color)
 	
 	reg [23:0] color_mem [0:11];
+/*	initial begin						//initializing ROM content
+		color_mem[0] 	= 24'h00003F;
+        color_mem[1] 	= 24'h00007F;
+        color_mem[2] 	= 24'h0000BF;
+        color_mem[3] 	= 24'h0000FF;
+        color_mem[4] 	= 24'h003F00;
+        color_mem[5] 	= 24'h007F00;
+        color_mem[6] 	= 24'h00BF00;
+        color_mem[7] 	= 24'h00FF00;
+        color_mem[8] 	= 24'h3F0000;
+        color_mem[9] 	= 24'h7F0000;
+        color_mem[10] 	= 24'hBF0000;
+        color_mem[11] 	= 24'hFF0000;
+    end 
+*/
 	initial begin
-		color_mem[0] = 24'h00003F;
-        color_mem[1] = 24'h00007F;
-        color_mem[2] = 24'h0000BF;
-        color_mem[3] = 24'h0000FF;
-        color_mem[4] = 24'h003F00;
-        color_mem[5] = 24'h007F00;
-        color_mem[6] = 24'h00BF00;
-        color_mem[7] = 24'h00FF00;
-        color_mem[8] = 24'h3F0000;
-        color_mem[9] = 24'h7F0000;
-        color_mem[10] = 24'hBF0000;
-        color_mem[11] = 24'hFF0000;
-    end
+		$readmemh("rom_data.hex", color_mem); //initializing ROM content by file
+	end
 
 	assign VGA_PLOT = 1;
 
