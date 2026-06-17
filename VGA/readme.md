@@ -2,7 +2,8 @@ File tutorial VGA interface
 1. basic color pattern
 2. simple box
 3. bouncing box
-4. simple text
+4. bouncing box with external control
+5. box control via Avalon-MM bus
 
 each example have the design file and testbench file
 
