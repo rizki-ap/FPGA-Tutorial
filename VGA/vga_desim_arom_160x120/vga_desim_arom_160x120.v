@@ -19,20 +19,16 @@ module vga_desim_arom_160x120 (clk,rst_n,VGA_X,VGA_Y,VGA_RGB,VGA_PLOT);
     output reg [23:0] VGA_RGB;   // VGA pixel colour (24-bit color)
     output wire VGA_PLOT;   	// VGA pixel colour (24-bit color)
 	
-	reg [23:0] color_mem [0:11];
+	reg [23:0] color_mem [0:7];
 /*	initial begin						//initializing ROM content
-		color_mem[0] 	= 24'h00003F;
-        color_mem[1] 	= 24'h00007F;
-        color_mem[2] 	= 24'h0000BF;
-        color_mem[3] 	= 24'h0000FF;
-        color_mem[4] 	= 24'h003F00;
-        color_mem[5] 	= 24'h007F00;
-        color_mem[6] 	= 24'h00BF00;
-        color_mem[7] 	= 24'h00FF00;
-        color_mem[8] 	= 24'h3F0000;
-        color_mem[9] 	= 24'h7F0000;
-        color_mem[10] 	= 24'hBF0000;
-        color_mem[11] 	= 24'hFF0000;
+		color_mem[0] 	= 24'h000000;
+        color_mem[1] 	= 24'h0000FF;
+        color_mem[2] 	= 24'h00FF00;
+        color_mem[3] 	= 24'h00FFFF;
+        color_mem[4] 	= 24'hFF0000;
+        color_mem[5] 	= 24'hFF00FF;
+        color_mem[6] 	= 24'hFFFF00;
+        color_mem[7] 	= 24'hFFFFFF;
     end 
 */
 	initial begin
@@ -63,7 +59,7 @@ module vga_desim_arom_160x120 (clk,rst_n,VGA_X,VGA_Y,VGA_RGB,VGA_PLOT);
 		if (rst_n == 0) 
 			VGA_RGB <= {24{1'b0}};
 		else 
-			VGA_RGB <= color_mem[(VGA_Y/10)];
+			VGA_RGB <= color_mem[(VGA_Y/15)];
 	end
 	
 
