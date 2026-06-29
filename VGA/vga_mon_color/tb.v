@@ -29,6 +29,18 @@ module tb();
     always #10
         CLOCK_50 <= ~CLOCK_50;
 
-    vga_color DUT (CLOCK_50,KEY[0],VGA_X,VGA_Y,VGA_COLOR, , ,plot, , );
+    //vga_color DUT (CLOCK_50,KEY[0],VGA_X,VGA_Y,VGA_COLOR, , ,plot, , );
+	    vga_color DUT ( .iCLK_50(CLOCK_50),
+                   .iRSTn(KEY[0]),
+                   .oVGA_Y(VGA_Y),
+                   .oVGA_X(VGA_X),
+                   .oVGA_RGB(VGA_COLOR),
+                   .oVGA_SYNC(plot),
+                   .oVGA_BLANK(),
+                   .oVGA_HS(),
+                   .oVGA_VS(),
+                   .oVGA_CLK()
+                  );
+
 
 endmodule
